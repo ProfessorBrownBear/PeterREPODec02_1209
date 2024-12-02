@@ -1,0 +1,23 @@
+name: Basic Workflow
+
+on:
+
+push:
+
+branches: [main]
+
+jobs:
+
+echo_job:
+
+runs-on: ubuntu-latest
+
+steps:
+
+name: Checkout Code
+
+uses: actions/checkout@v2
+
+name: Echo Command
+
+run: echo "Hello, GitHub Actions!"
